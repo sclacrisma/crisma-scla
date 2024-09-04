@@ -1,0 +1,41 @@
+.link {
+  display: flex;
+  gap: 11px;
+}
+
+.link p {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.active {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+  .active {
+    border-bottom: 3px solid white;
+  }
+
+  .index {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .linkBox:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .index {
+    display: block;
+  }
+
+  .link p {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+}

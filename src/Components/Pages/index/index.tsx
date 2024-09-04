@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from "./index.module.css"
 
-export default function index() {
+export default function Index() {
   return (
-    <main>
+    <main className={styles.main}>
       <h1>Crisma Santa Catarina Labouré</h1>
     </main>
   )

@@ -1,0 +1,31 @@
+.main {
+  background-image: url("/assets/backgroud/home/bg-desktop.jpg");
+  min-height: 100vh;
+}
+
+.formulario {
+  width: 85%;
+  height: 90vh;
+  margin: 0 auto;
+  padding-top: 10vh;
+}
+
+.formulario iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .formulario {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .formulario {
+    padding-top: 160px;
+  }
+  .formulario {
+    width: 640px;
+  }
+}

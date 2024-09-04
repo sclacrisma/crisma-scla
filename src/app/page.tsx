@@ -1,3 +1,3 @@
-import index from "@/Components/Pages/index";
+import Index from "@/Components/Pages/index";
 
-export default index
+export default Index

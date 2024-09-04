@@ -1,0 +1,12 @@
+.main {
+  background-image: url("/assets/backgroud/home/bg-desktop.jpg");
+  padding-top: 136px;
+  padding-bottom: 131px;
+  padding-inline: 165px;
+  flex-direction: row;
+  gap: 386px;
+  justify-content: space-between;
+  align-items: end;
+
+  min-height: 100vh;
+}
