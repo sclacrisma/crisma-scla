@@ -20,7 +20,10 @@ export async function cmsService({ query, preview }:iCmsService):Promise<IPergun
       },
       body: JSON.stringify({
         query
-      })
+      }),
+      next: {
+        tags: ["faq"]
+      }
     }).then(async serverResponse => {
       const body = await serverResponse.json();
       if (!body.errors) return body;
