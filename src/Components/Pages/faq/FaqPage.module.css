@@ -1,0 +1,8 @@
+.main {
+  background-image: url("/assets/backgroud/home/bg-desktop.jpg");
+  padding-top: 136px;
+  padding-bottom: 131px;
+
+  min-height: 100vh;
+}
+
