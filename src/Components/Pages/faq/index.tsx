@@ -3,7 +3,6 @@ import styles from './FaqPage.module.css'
 import Perguntas from './Perguntas'
 import { cmsService } from '@/infra/cms/cmsService'
 
-export const revalidate = 0;
 
 const query = `
 query { allPerguntaFrequentes { id pergunta resposta } } `

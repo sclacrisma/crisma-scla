@@ -7,6 +7,7 @@ interface iCmsService {
   preview: boolean
 }
 
+
 export async function cmsService({ query, preview }:iCmsService):Promise<IPerguntas> {
   const url = preview ? DATO_URL_PREVIEW : DATO_URL;
   try {
