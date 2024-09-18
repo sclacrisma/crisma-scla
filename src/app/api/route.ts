@@ -1,7 +1,8 @@
 export async function POST(request: Request) {
   try {
-    const text = await request.text()
-    console.log(text)
+    const requisicao = await request
+    console.log(requisicao.body)
+    console.log(requisicao.credentials)
   } catch (e) {
     return new Response(`Webhook error: ${(e as Error).message}`, {
       status: 400,

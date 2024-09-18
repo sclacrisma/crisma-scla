@@ -27,9 +27,6 @@ export async function cmsService({ query, preview }:iCmsService):Promise<IPergun
 
       throw new Error(JSON.stringify(body));
     });
-    console.log("cmsService",{
-      ...pageContentResponse.data
-    })
 
     return {
       ...pageContentResponse.data
