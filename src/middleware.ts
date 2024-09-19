@@ -4,7 +4,7 @@ import { cmsService } from './infra/cms/cmsService';
 import IDatas from './infra/types/IDatas';
  
 const query = `
-"query { dataImportante{ id inicioDasInscriOes fimDasInscriEs inicioDaCrisma fimDaCrisma } }" `
+query { dataImportante{ id inicioDasInscriOes fimDasInscriEs inicioDaCrisma fimDaCrisma } } `
 
 export async function middleware(request: NextRequest) {
   const env = process.env.NODE_ENV;
