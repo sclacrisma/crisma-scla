@@ -1,12 +1,17 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import { cmsService } from './infra/cms/cmsService';
+import IDatas from './infra/types/IDatas';
  
-// This function can be marked `async` if using `await` inside
-export function middleware(request: NextRequest) {
+const query = `
+"query { dataImportante{ id inicioDasInscriOes fimDasInscriEs inicioDaCrisma fimDaCrisma } }" `
+
+export async function middleware(request: NextRequest) {
   const env = process.env.NODE_ENV;
   const currentDate = new Date();
-  const startDate = new Date('2024-11-1');
-  const endDate = new Date('2025-01-31');
+  const datas = await cmsService<IDatas>({query, tag:"datas", preview:false})
+  const startDate = new Date(datas.inicioDasInscriOes);
+  const endDate = new Date(datas.fimDasInscriEs);
   if (env == "development"){
     return NextResponse.next();
   }

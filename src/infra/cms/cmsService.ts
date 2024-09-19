@@ -4,11 +4,12 @@ const DATO_URL = process.env.DATO_URL;
 const DATO_URL_PREVIEW = process.env.DATO_URL_PREVIEW;
 interface iCmsService {
   query: string,
-  preview: boolean
+  tag: string
+  preview: boolean,
 }
 
 
-export async function cmsService({ query, preview }:iCmsService):Promise<IPerguntas> {
+export async function cmsService<respose>({ query,tag, preview }:iCmsService):Promise<respose> {
   const url = preview ? DATO_URL_PREVIEW : DATO_URL;
   try {
     const pageContentResponse = await fetch(url? url : "", {
@@ -22,7 +23,7 @@ export async function cmsService({ query, preview }:iCmsService):Promise<IPergun
         query
       }),
       next: {
-        tags: ["faq"]
+        tags: [tag]
       }
     }).then(async serverResponse => {
       const body = await serverResponse.json();

@@ -11,7 +11,9 @@ export default function Pergunta({ id, titulo, texto }: IPergunta) {
   return (
     <Accordion.Item eventKey={id} >
       <Accordion.Header>{titulo} </Accordion.Header>
-      <Accordion.Body> {texto} </Accordion.Body>
+      <Accordion.Body>
+        <div dangerouslySetInnerHTML={{ __html: texto }}></div>
+      </Accordion.Body>
     </Accordion.Item>
   )
 }

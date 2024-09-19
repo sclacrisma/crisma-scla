@@ -1,3 +1,9 @@
 .perguntas {
   padding: 0 20px;
 }
+
+@media screen and (min-width: 1440px) {
+  .perguntas {
+    padding: 40px 10%;
+  }
+}

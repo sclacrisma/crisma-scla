@@ -7,7 +7,7 @@
 .dropdownMenu img {
   width: 24px;
   height: 24px;
-  z-index: 1;
+  z-index: 7;
 }
 
 .open {
@@ -21,11 +21,12 @@
   height: 100vh;
   pointer-events: none;
   padding-top: 118px;
+  z-index: 6;
 }
 
 .nav {
   pointer-events: all;
-  z-index: 2;
+  z-index: 8;
 }
 
 .nav ul {

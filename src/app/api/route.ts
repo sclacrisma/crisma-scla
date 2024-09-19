@@ -9,6 +9,7 @@ export async function POST(request: Request) {
     if (auth != `Bearer ${DATO_WEBHOOK_TOKEN}`){
       return new Response("Not Authorized", {status: 401})
     }
+    console.log("tag:", texto.tag)
 
     if (texto.tag === "faq"){
       revalidateTag("faq")
