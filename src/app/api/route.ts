@@ -16,6 +16,11 @@ export async function POST(request: Request) {
       console.log("tag faq revalidada")
     }
 
+    if (texto.tag === "datas"){
+      revalidateTag("datas")
+      console.log("tag datas revalidada")
+    }
+
   } catch (e) {
     return new Response(`Webhook error: ${(e as Error).message}`, {
       status: 400,
