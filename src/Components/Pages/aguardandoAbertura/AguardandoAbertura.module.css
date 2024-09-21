@@ -1,12 +1,68 @@
 .main {
-  background-image: url("/assets/backgroud/home/bg-desktop.jpg");
+  background-image: url("/assets/backgroud/aguardandoAbertura/bg-desktop.jpg");
   padding-top: 136px;
   padding-bottom: 131px;
   display: flex;
-  flex-direction: row;
-  gap: 386px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   min-height: 100vh;
+}
+
+.container {
+  width: 95%;
+}
+
+.anuncio {
+  background-color: rgb(201 201 201 / 53%);
+  padding: 15px;
+  border-radius: 20px;
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.mostrador {
+  background-color: black;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.numero {
+  font-size: 90px;
+  margin: 0;
+}
+
+.separador {
+  content: "";
+  border-bottom: 3px solid white;
+}
+
+.texto {
+  font-size: 46px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .anuncio br {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    .formulario {
+      padding-top: 160px;
+    }
+    .formulario {
+      width: 640px;
+    }
+  }
 }

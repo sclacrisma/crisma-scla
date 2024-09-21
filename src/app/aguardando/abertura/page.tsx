@@ -3,7 +3,7 @@ import AguardandoAbertura from "@/Components/Pages/aguardandoAbertura";
 import Index from "@/Components/Pages/index";
 
 
-const underConstruction = true
+const underConstruction = false
 
 export default function page() {
 
