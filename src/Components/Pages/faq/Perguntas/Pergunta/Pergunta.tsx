@@ -1,5 +1,6 @@
 import React from 'react'
 import { Accordion } from 'react-bootstrap'
+import styles from './Pergunta.module.css'
 
 interface IPergunta {
   id: string,
@@ -12,7 +13,7 @@ export default function Pergunta({ id, titulo, texto }: IPergunta) {
     <Accordion.Item eventKey={id} >
       <Accordion.Header>{titulo} </Accordion.Header>
       <Accordion.Body>
-        <div dangerouslySetInnerHTML={{ __html: texto }}></div>
+        <div className={styles.body} dangerouslySetInnerHTML={{ __html: texto }}></div>
       </Accordion.Body>
     </Accordion.Item>
   )

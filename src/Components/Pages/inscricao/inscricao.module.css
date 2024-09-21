@@ -19,13 +19,12 @@
   .formulario {
     padding-top: 120px;
   }
-}
-
-@media screen and (min-width: 1440px) {
-  .formulario {
-    padding-top: 160px;
-  }
-  .formulario {
-    width: 640px;
+  @media screen and (min-width: 1440px) {
+    .formulario {
+      padding-top: 160px;
+    }
+    .formulario {
+      width: 640px;
+    }
   }
 }

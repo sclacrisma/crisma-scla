@@ -11,8 +11,8 @@ export async function middleware(request: NextRequest) {
   const env = process.env.NODE_ENV;
   const currentDate = new Date();
   const datas = await cmsService<IDatas>({query, tag:"datas", preview:false})
-  const startDate = new Date(datas.dataImportante.inicioDasInscriOes);
-  const endDate = new Date(datas.dataImportante.fimDasInscriEs);
+  const startDate = new Date(`${datas.dataImportante.inicioDasInscriOes} 00:00:00  GMT-0300`);
+  const endDate = new Date(`${datas.dataImportante.fimDasInscriEs} 00:00:00  GMT-0300`);
 
   if (env == "development" && ativar){
     return NextResponse.next();
