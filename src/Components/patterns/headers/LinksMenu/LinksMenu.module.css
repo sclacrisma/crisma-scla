@@ -1,6 +1,7 @@
 .link {
   display: flex;
   gap: 11px;
+  text-decoration: none;
 }
 
 .link p {
