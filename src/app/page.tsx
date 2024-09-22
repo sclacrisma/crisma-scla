@@ -2,7 +2,7 @@ import EmConstrucao from "@/Components/Common/emConstrucao";
 import Index from "@/Components/Pages/index";
 
 
-const underConstruction = true
+const underConstruction = false
 
 export default function page() {
 

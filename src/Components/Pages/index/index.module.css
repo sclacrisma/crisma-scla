@@ -1,12 +1,20 @@
 .main {
-  background-image: url("/assets/backgroud/home/bg-desktop.jpg");
-  padding-top: 136px;
+  /* background-image: url("/assets/backgroud/home/crisma.jpg"); */
+  background-color: var(--bg-color);
+
   padding-bottom: 131px;
   display: flex;
-  flex-direction: row;
-  gap: 386px;
-  justify-content: center;
-  align-items: center;
-
+  flex-direction: column;
+  justify-content: flex-start;
   min-height: 100vh;
+}
+
+.banner {
+  width: 100vw;
+}
+
+.banner img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
