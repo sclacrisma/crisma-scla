@@ -2,6 +2,8 @@ import { cmsService } from '@/infra/cms/cmsService'
 import styles from './AguardandoAbertura.module.css'
 import IDatas from '@/infra/types/IDatas'
 
+export const revalidate = 3600
+
 const query = `
 query { dataImportante{ id inicioDasInscriOes fimDasInscriEs inicioDaCrisma fimDaCrisma } } `
 
