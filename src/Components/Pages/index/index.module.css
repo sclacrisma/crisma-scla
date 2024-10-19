@@ -6,7 +6,29 @@
   flex-direction: row;
   gap: 386px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   min-height: 100vh;
+}
+
+.tituloContainer {
+  background-color: #ffffffd1;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.tituloContainer p {
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    padding-top: 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

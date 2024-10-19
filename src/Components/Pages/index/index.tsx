@@ -5,7 +5,9 @@ import EmConstrucao from '@/Components/Common/emConstrucao'
 export default function Index() {
   return (
     <main className={styles.main}>
-      <EmConstrucao />
+      <div className={styles.tituloContainer} >
+        <p>Bem vindo a Crisma da Paróquia Santa Catarina Labouré</p>
+      </div>
     </main>
   )
 }
