@@ -8,7 +8,7 @@ const query = `
 query { dataImportante{ id inicioDasInscriOes fimDasInscriEs inicioDaCrisma fimDaCrisma } } `
 
 export default async function AguardandoAbertura() {
-  const datas = await cmsService<IDatas>({ query, tag: "datas", preview: false })
+  const datas = await cmsService<IDatas>({ query, tag: "datas", preview: false, revalidate: 3600 })
   const abertura = new Date(`${datas.dataImportante.inicioDasInscriOes} 00:00:00  GMT-0300`)
   const today = new Date()
   const diferencaEmMs = abertura.getTime() - today.getTime();

@@ -10,7 +10,7 @@ query { dataImportante{ id inicioDasInscriOes fimDasInscriEs inicioDaCrisma fimD
 export async function middleware(request: NextRequest) {
   const env = process.env.NODE_ENV;
   const currentDate = new Date();
-  const datas = await cmsService<IDatas>({query, tag:"datas", preview:false})
+  const datas = await cmsService<IDatas>({query, tag:"datas", preview:false, revalidate: 10800})
   const startDate = new Date(`${datas.dataImportante.inicioDasInscriOes} 00:00:00  GMT-0300`);
   const endDate = new Date(`${datas.dataImportante.fimDasInscriEs} 00:00:00  GMT-0300`);
 
