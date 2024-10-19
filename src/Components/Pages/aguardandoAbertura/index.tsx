@@ -20,7 +20,7 @@ export default async function AguardandoAbertura() {
         <div className={styles.mostrador}>
           <p className={styles.numero}>{diferencaEmDias}</p>
           <hr className={styles.separador} />
-          <p className={styles.texto}>dias</p>
+          <p className={styles.texto}>{diferencaEmDias === 1 ? "dia" : "dias"}</p>
         </div>
       </div>
 
