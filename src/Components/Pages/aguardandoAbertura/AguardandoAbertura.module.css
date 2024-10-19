@@ -54,6 +54,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .main {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .anuncio br {
     display: none;
   }
